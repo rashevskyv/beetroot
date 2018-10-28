@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: all .1s ease-in;
+    font-family: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: #3399CC;
+    color: white;
+    border: 15px solid #2B81AC;
+}
+
+/*header*/
+
+header {
+    padding: 24px 0;
+    font-size: 20px;
+    max-width: 700px;
+    min-width: 392px;
+    margin: auto;
+    font-weight: bold;
+}
+
+/*table of forecast */
+
+div.forecast {
+    max-width: 700px;
+    min-width: 392px;
+    margin: auto;
+    height: 100%;
+}
+
+ul {
+    font-size: 0;
+    border: 2px solid white;
+    height: 435px;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+    border: 2px solid white;
+    font-size: 19px;
+    height: 25%;
+    text-align: center;
+    padding: 23px 0;
+}
+
+.small {
+    width: 25%;
+}
+
+.mid {
+    width: 50%;
+}
+
+.big {
+    width: 100%;
+}
+
+span.weather {
+    display: block;
+    padding-top: 9px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.wi {
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+/* bgcolors */
+
+.pari {
+    background-color: #33CCCC;
+}
+
+.belg {
+    background-color: #996699;
+}
+
+.mosc {
+    background-color: #C24747;
+}
+
+.ta {
+    background-color: #E2674A;
+}
+
+.cair {
+    background-color: #FFCC66;
+}
+
+.ny {
+    background-color: #99CC99;
+}
+
+.nd {
+
+    background-color: #669999;
+}
+
+.sf {
+    background-color: #CC6699;
+}
+
+.tok {
+    background-color: #339966;
+}
+
+.syd {
+    background-color: #666699
+}
+
+/* overlay */
+
+div.overlay {
+    position: relative;
+    padding: 55px 0;
+    top: -81px;
+    width: 100%;
+}
+
+ul:hover div.overlay {
+    background-color: rgba(255,255,255,0.5);
+}
+
+li:hover div.overlay{
+    background-color: rgba(255,255,255,0);
+    cursor: pointer;
+}
+
+/* text */
+
+p {
+    padding: 20px 0;
+}
