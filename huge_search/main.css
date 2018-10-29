@@ -10,8 +10,10 @@
 
 body {background-color: #F1F1F1;}
 
+/*убираем пробел между ul*/
 div {font-size: 0;}
 
+/*разметка блоков*/
 div.main {
     min-width: 771px;
     max-width: 870px;
@@ -31,10 +33,17 @@ li {
     height: 60px;
 }
 
+/*заголовок блока */
+
 h2 {
     margin-left: 20px;
-    font-size: 15px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #C2C2C2;
 }
+
+/*картиночки в блоках*/
 
 img {
     padding: 10px;
@@ -44,6 +53,8 @@ img {
 img.people {
     border-radius: 100%;
 }
+
+/*текст в блоках*/
 
 .text {
     position: relative;
