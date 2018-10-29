@@ -33,15 +33,6 @@ li {
     height: 60px;
 }
 
-/*динамика*/
-li:hover {
-    background-color: rgba(118,117,128,0.1);
-}
-
-.text:hover{
-    color: #ec5a62;
-}
-
 /*заголовок блока */
 h2 {
     margin-left: 20px;
