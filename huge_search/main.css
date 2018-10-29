@@ -29,7 +29,6 @@ li {
     background-color: #EBEBED;
     border-radius: 5px;
     height: 60px;
-    color: #c2c2c2;
 }
 
 h2 {
@@ -48,16 +47,37 @@ img.people {
 
 .text {
     position: relative;
-    top: -36px;
+    top: -35px;
     margin: 0 9px 0 60px;
     font-size: 11.5px;
     font-weight: bold;
+    color: #c2c2c2;
 }
 
 .twolines {
     top: -42px;
 }
 
-input {
-    border: 0;
+/*Search*/
+
+form {
+    width: 830px;
+    height: 180px;
 }
+
+input[type="search"] {
+    border: 0;
+    font-size: 80px;
+    font-weight: bold;
+    height: 80px;
+    width: 500px;
+    background-color: #f1f1f1;
+}
+
+input[type="image"]{
+    width: 60px;
+}
+
+input {margin: 50px 20px;}
+
+::placeholder {color: #C2C2C2;}
