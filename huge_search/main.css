@@ -28,10 +28,31 @@ li {
     margin: 3px 20px;
     background-color: #EBEBED;
     height: 60px;
-    font-size: 15px;
+    color: #c2c2c2;
 }
 
 h2 {
     margin-left: 20px;
     font-size: 15px;
+}
+
+img {
+    padding: 10px;
+    height: 60px;
+}
+
+img.people {
+    border-radius: 100%;
+}
+
+.text {
+    position: relative;
+    top: -36px;
+    margin: 0 9px 0 60px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.twolines {
+    top: -44px;
 }
