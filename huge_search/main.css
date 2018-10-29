@@ -33,16 +33,7 @@ li {
     height: 60px;
 }
 
-/*заголовок блока */
-
-h2 {
-    margin-left: 20px;
-    font-size: 13px;
-    text-transform: uppercase;
-    font-weight: 900;
-    color: #C2C2C2;
-}
-
+/*динамика*/
 li:hover {
     background-color: rgba(118,117,128,0.1);
 }
@@ -51,10 +42,25 @@ li:hover {
     color: #ec5a62;
 }
 
+/*заголовок блока */
+h2 {
+    margin-left: 20px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #C2C2C2;
+}
 
+/*динамика*/
+li:hover {
+    background-color: rgba(118,117,128,0.1);
+}
+
+.text:hover{
+    color: #ec5a62;
+}
 
 /*картиночки в блоках*/
-
 img {
     display: inline;
     padding: 10px;
@@ -66,7 +72,6 @@ img.people {
 }
 
 /*текст в блоках*/
-
 .text {
     position: relative;
     top: -60px;
@@ -83,7 +88,6 @@ img.people {
 }
 
 /*Search*/
-
 form {
     width: 830px;
     height: 180px;
