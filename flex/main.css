@@ -1,6 +1,6 @@
 *{
-    padding:  0px;
-    margin:  0px;
+    padding:  3px;
+    margin:  0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -14,6 +14,8 @@ div {
 }
 
 div.flex {
+    position: absolute;
+    top: 102px;
     display: flex;
     height: 500px;
     width: 60%;
@@ -29,6 +31,8 @@ div.flex>div{
 input:checked[id="dispbl"]~div {
     display: block;
 }
+
+/*flex-direction меняет оси местами*/
 
 input[name="flex-direction"], input[name="flex-direction"]+label {
     position: relative;
@@ -50,4 +54,60 @@ input:checked[id="row"]~div {
 
 input:checked[id="rowrev"]~div {
     flex-direction: row-reverse;
+}
+
+/*justify-content выравнивает контент вдоль оси Х */
+
+input[name="justify-content"], input[name="justify-content"]+label {
+    position: relative;
+    left: 418px;
+    top: -113px;
+}
+
+input:checked[id="fstart"]~div {
+    justify-content: flex-start;
+}
+
+input:checked[id="fend"]~div {
+    justify-content: flex-end;
+}
+
+input:checked[id="center"]~div {
+    justify-content: center;
+}
+
+input:checked[id="spacea"]~div {
+    justify-content: space-around;
+}
+
+input:checked[id="spaceb"]~div {
+    justify-content: space-between;
+}
+
+/*align-items выравнивает контент вдоль оси Y */
+
+input[name="align-items"], input[name="align-items"]+label {
+    position: relative;
+    left: 704px;
+    top: -207px;
+}
+
+input:checked[id="al_fstart"]~div {
+    align-items: flex-start;
+}
+
+input:checked[id="al_fend"]~div {
+    align-items: flex-end;
+}
+
+input:checked[id="al_center"]~div {
+    align-items: center;
+}
+
+input:checked[id="al_stretch"]~div {
+    align-items: stretch;
+}
+
+input:checked[id="al_base"]~div {
+    align-items: baseline;
 }
