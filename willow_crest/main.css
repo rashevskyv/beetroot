@@ -50,7 +50,7 @@ p {
     font-stretch: expanded;
 }
 
-p.first:first-letter {
+div.article>p:first-child:first-letter{
     float: left;
     color: black;
     padding: 6px 35px 6px 0;
