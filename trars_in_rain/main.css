@@ -1,0 +1,241 @@
+@font-face {
+    font-family: 'Futura';
+
+    src:    url('https://nomail.com.ua/files/eot/5b6575ccd521b96b68504700b10e3e66.eot?#iefix') format('embedded-opentype'),
+    url('https://nomail.com.ua/files/woff/5b6575ccd521b96b68504700b10e3e66.woff') format('woff'),
+    url('https://nomail.com.ua/files/woff2/5b6575ccd521b96b68504700b10e3e66.woff2') format('woff2');
+}
+
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: all .1s ease-in;
+}
+
+html, body {
+    background-color: #454f53;
+    height: 100%;
+}
+
+.paper {
+    background-color: white;
+    position: relative;
+    top: 100px;
+    width: 80%;
+    max-width: 1080px;
+    min-width: 780px;
+    height: calc(100% - 100px);
+    margin: 0 auto;
+    -webkit-box-shadow: 0 0 23px 2px rgba(23,23,23,0.73);
+    -moz-box-shadow: 0 0 23px 2px rgba(23,23,23,0.73);
+    box-shadow: 0 0 23px 2px rgba(23,23,23,0.73);
+}
+
+.content {
+    position: absolute;
+    top: 200px;
+    padding-left: 130px;
+    margin-top: 20px;
+}
+
+.title_big {
+    font-family: "Futura Bk BT", Futura, Verdana, sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 60px;
+    padding: 20px 0 8px 0;
+}
+
+.epigraph {
+    font-family: Georgia, sans-serif;
+    color: #848484;
+    font-style: italic;
+    font-size: 30px;
+}
+
+div.maintext p {
+    font-family: Georgia, sans-serif;
+    font-size: 27px;
+    color: black;
+    margin: 30px 70px 30px 0;
+    text-align: justify;
+}
+
+.vl {
+    width: 80px;
+    border-right: 2px solid #c2c2c2;
+    height: 100%;
+}
+
+.top {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 70vw;
+}
+
+.title {
+    background-color: black;
+    height: 185px;
+    padding: 37px 0 0 60px;
+}
+
+.title_name {
+    font-family: "Nova Mono", "Droid Sans Mono", monospace;
+    text-transform: uppercase;
+    color: #848484;
+    font-weight: bolder;
+    letter-spacing: 5px;
+}
+
+.title_text{
+    font-family: "Playfair Display", "Times New Roman", serif;
+    text-transform: capitalize;
+    color: white;
+    font-size: 48px;
+    padding-bottom: 10px;
+}
+
+.instruments_bg {
+    position: relative;
+    right: 0;
+    left:5%;
+    width:95%;
+    background-color: #fbc02d;
+    height: 75px;
+}
+
+.instruments {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px 10px 0 10px;
+    max-width: 650px;
+    min-width: 500px;
+}
+
+.inst {width: 32px; height: 32px; zoom: 70%; opacity: 0.6;}
+.inst:hover {opacity: 1;}
+
+._1 {
+    background-image: url("img/font.png");
+}
+._2 {
+    background-image: url("img/capitals.png");
+}
+._3{
+    background-image: url("img/img.png");
+}
+._4 {
+    background-image: url("img/bold.png");
+}
+._5 {
+    background-image: url("img/italic.png");
+}
+._6 {
+    background-image: url("img/underline.png");
+}
+._7 {
+    background-image: url("img/justify-align.png");
+}
+._8 {
+    background-image: url("img/left-align.png");
+}
+._9 {
+    background-image: url("img/center-alignment.png");
+}
+._10 {
+    background-image: url("img/left-align.png");
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+
+@media screen and (max-width: 800px){
+    .paper {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        min-width: 320px;
+    }
+
+    .content {
+        top: 80px;
+        padding: 30px 20px 0 20px;
+        width: 100%;
+        background-color: white;
+    }
+
+    .title_big {
+        font-family: "Playfair Display", "Times New Roman", serif;
+        text-transform: capitalize;
+        color: white;
+        font-size: 35px;
+        position: absolute;
+        top: -111px;
+        z-index: 1;
+    }
+
+    .epigraph {
+        font-size: 20px;
+    }
+
+    div.maintext p {
+        font-size: 18px;
+        margin: 30px 0 30px 0;
+    }
+
+    .vl {
+        display: none;
+    }
+
+    .top {
+        top: 0;
+        width: 100%;
+    }
+
+    .title {
+        height: 70px;
+    }
+
+    hr {display: none}
+
+    .title_name {
+        -webkit-transform: rotate(270deg);
+        transform: rotate(270deg);
+        position: absolute;
+        top: 183px;
+        left: -82px;
+        font-size: 12px;
+    }
+
+    .small {
+        top: 24px;
+        left: -20px;
+    }
+
+    .title_text{
+        display: none;
+    }
+
+    .instruments_bg {
+        position: relative;
+        left:0;
+        width:100%;
+        height: 40px;
+    }
+
+    .instruments {
+        padding: 11px 10px 0 0;
+        min-width: 300px;
+
+    }
+
+    .inst {zoom: 60%;}
+}
