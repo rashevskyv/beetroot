@@ -25,7 +25,7 @@ body, html {
 }
 
 .bottom {
-    height:calc(100vh - 427px);
+    height:100%;
     width: 100%;
     color: #000;
     background: url("../img/bg.png");
