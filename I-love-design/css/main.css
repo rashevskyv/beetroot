@@ -1,0 +1,130 @@
+body {background-color: #282828}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+html {
+    height: 100%;
+}
+body, html {
+    min-height: 100%;
+}
+
+.top {
+    height: 427px;
+    width: 100%;
+    background-color: #23232e;
+    color: white;
+    padding: 40px 0 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.bottom {
+    height:calc(100vh - 427px);
+    width: 100%;
+    color: #000;
+    background: url("../img/bg.png");
+}
+
+.bottom>.content {
+    color: #464b4f;
+}
+
+.logo {
+    height: 67px;
+    width: 67px;
+}
+
+.text {
+    font-family: "Segoe UI", Verdana, serif;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 40px!important;
+}
+
+.small {
+    font-size: 9px;
+    width: 270px;
+    padding: 20px 20px 20px 25px;
+}
+
+.circle {
+    border: 1px solid white;
+    width: 23px;
+    height: 23px;
+    padding: 5px 0 0 0;
+}
+
+.circle:hover {
+    background-color: rgba(255,255,255,0.6);
+    transition: all .1s ease-in;
+    color: rgba(0,0,0,1);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 195px 50px 195px;
+    height: 100%;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 1.7em;
+}
+
+.ba-col-4 {
+    padding: 0 5px 0 5px;
+
+}
+
+.columns article {color: #888a8b; font-weight: normal}
+
+header {
+    position: relative;
+    bottom: 10px;
+}
+
+@media screen and (max-width: 850px){
+    .content {
+        padding: 10%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .bottom {
+        height: 100%;
+    }
+
+    .columns {
+        display: block;
+    }
+
+    .ba-col-4 {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .text {margin: 0}
+
+    h1.text {margin: 30px 0 30px 0}
+}
