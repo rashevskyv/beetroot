@@ -241,26 +241,26 @@ article.main > div {
 article.main > div:first-child {
     width: 450px;
     height: 302px;
-    background-image: url(img/multiple-items.png);
+    background-image: url(img/main/multiple-items.png);
     margin-right: 40px;
 }
 
 article.main > div:nth-child(2) {
     width: 450px;
     height: 486px;
-    background-image: url(img/app.png);
+    background-image: url(img/main/app.png);
 }
 
 article.main > div:nth-child(3) {
     width: 650px;
     height: 438px;
-    background-image: url(img/identite-visuelle.png);
+    background-image: url(img/main/identite-visuelle.png);
 }
 
 article.main > div:last-child {
     width: 650px;
     height: 350px;
-    background-image: url(img/prototype.png);
+    background-image: url(img/main/prototype.png);
 }
 
 /*overlay*/
@@ -393,15 +393,15 @@ textarea {
 }
 
 div.user {
-    background-image: url(img/user.png);
+    background-image: url(img/input/user.png);
 }
 
 div.mail {
-    background-image: url(img/mail.png);
+    background-image: url(img/input/mail.png);
 }
 
 div.ta {
-    background-image: url(img/crayon.png);
+    background-image: url(img/input/crayon.png);
     position: relative;
     top: -24px;
     left: 26px;
@@ -470,7 +470,7 @@ footer {
     cursor: pointer;
 }
 
-.social>div:first-child {background-image: url(img/twitter.png);}
-.social>div:nth-child(2) {background-image: url(img/linkedin.png);}
-.social>div:nth-child(3) {background-image: url(img/dribbble.png);}
-.social>div:last-child {background-image: url(img/behance.png);}
+.social>div:first-child {background-image: url(img/social/twitter.png);}
+.social>div:nth-child(2) {background-image: url(img/social/linkedin.png);}
+.social>div:nth-child(3) {background-image: url(img/social/dribbble.png);}
+.social>div:last-child {background-image: url(img/social/behance.png);}
