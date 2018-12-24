@@ -1,0 +1,476 @@
+@font-face {
+    font-family: BigJohn; /* Имя шрифта */
+    src: url(fonts/BigJohn.otf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: SlimJoe; /* Имя шрифта */
+    src: url(fonts/SlimJoe.otf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: "lato";
+    src: url("https://use.typekit.net/af/a18530/00000000000000000001522e/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff2"), url("https://use.typekit.net/af/a18530/00000000000000000001522e/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff"), url("https://use.typekit.net/af/a18530/00000000000000000001522e/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("opentype");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "lato";
+    src: url("https://use.typekit.net/af/6d5f34/000000000000000000015225/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("woff2"), url("https://use.typekit.net/af/6d5f34/000000000000000000015225/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("woff"), url("https://use.typekit.net/af/6d5f34/000000000000000000015225/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("opentype");
+    font-style: normal;
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "lato";
+    src: url("https://use.typekit.net/af/af23d0/000000000000000000015233/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("woff2"), url("https://use.typekit.net/af/af23d0/000000000000000000015233/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("woff"), url("https://use.typekit.net/af/af23d0/000000000000000000015233/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("opentype");
+    font-style: normal;
+    font-weight: 800;
+}
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: all .1s ease-in;
+}
+
+body {
+    height: 100%;
+    font-family: lato, "Myriad Pro", Verdana, sans-serif;
+    min-width: 1170px;
+}
+
+a, a:visited, a:hover, a:active {
+    color: white;
+    text-decoration: none;
+}
+
+/*scrollbar*/
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #3c4955;
+}
+
+/*button*/
+button {
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 18px;
+    border-radius: 3px;
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button.green {
+    color: #48bf72;
+    border: 2px solid #48bf72;
+}
+
+button.green:hover {
+    background-color: rgba(114, 229, 155, 0.2);
+    color: white;
+}
+
+button.grey {
+    color: #3c4955;
+    border: 2px solid #3c4955;
+}
+
+button.grey:hover {
+    background-color: rgba(71, 75, 78, 0.2);
+    color: white;
+}
+
+/*1st block - HERO*/
+/*BG picture*/
+
+.hero {
+    height: 650px;
+    background: url("img/hero.png") no-repeat center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*text*/
+
+.hero > h1 {
+    position: absolute;
+    top: 277px;
+    font-family: BigJohn, Verdana, sans-serif;
+    color: #ffffff;
+    font-size: 46px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.hero > h2 {
+    position: relative;
+    top: 60px;
+    left: -18px;
+    font-family: SlimJoe, Verdana, sans-serif;
+    color: #ffffff;
+    font-size: 30px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+article.hero > button {
+    position: relative;
+    top: 107px;
+}
+
+/*navigation*/
+
+.navbar {
+    width: 62.8%;
+    position: absolute;
+    top: 36px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/*navbar items*/
+
+.navbar > nav > ul > li {
+    display: inline-block;
+    margin: 37px 0 0 0;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.navbar > nav > ul > li > span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*lines between items on navbar*/
+
+.navbar > nav > ul > li:before {
+    content: "/";
+    margin: 0 50px;
+    color: #6b7883;
+    font-family: Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.navbar > nav > ul > li:first-child:before {
+    content: none;
+}
+
+/*2nd block - MAIN*/
+
+main {
+    height: 1000px;
+    width: 1140px;
+    margin: 0 auto;
+}
+
+/*main navigation*/
+
+main > nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 50px 21%;
+}
+
+main > nav > ul > li {
+    display: inline-block;
+    font-weight: 700;
+    color: black;
+    font-size: 16px;
+    background-color: #eaeaea;
+    padding: 5px 13px;
+    border-radius: 2px;
+}
+
+main > nav > ul > li:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #48bf72;
+}
+
+/*main blocks */
+
+article.main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 868px;
+}
+
+article.main > div {
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+/*content of each blocksspan*/
+
+article.main > div:first-child {
+    width: 450px;
+    height: 302px;
+    background-image: url(img/multiple-items.png);
+    margin-right: 40px;
+}
+
+article.main > div:nth-child(2) {
+    width: 450px;
+    height: 486px;
+    background-image: url(img/app.png);
+}
+
+article.main > div:nth-child(3) {
+    width: 650px;
+    height: 438px;
+    background-image: url(img/identite-visuelle.png);
+}
+
+article.main > div:last-child {
+    width: 650px;
+    height: 350px;
+    background-image: url(img/prototype.png);
+}
+
+/*overlay*/
+
+div.overlay {
+    background-color: rgba(72, 191, 114, 0);
+    width: inherit;
+    height: inherit;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0);
+}
+
+div.overlay:hover {
+    background-color: rgba(72, 191, 114, 0.85);
+    cursor: pointer;
+    color: rgba(255, 255, 255, 1);
+}
+
+/*text on overlay*/
+
+.overlay > h2 {
+    font-size: 30px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.overlay > h3 {
+    font-size: 15px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 500;
+}
+
+/*3rd block - BIO*/
+/*BG image*/
+
+article.bio {
+    height: 500px;
+    background: url("img/men-computer.png") no-repeat center;
+}
+
+/*textplace*/
+article.bio > div {
+    width: 420px;
+    position: relative;
+    left: 51.1%;
+    top: 80px;
+    color: white;
+}
+
+/*text*/
+article.bio > div > h1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+article.bio > div > h2 {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+article.bio > div > p {
+    margin: 30px 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+/*4th block - ADDRESS*/
+
+address {
+    height: 522px;
+}
+
+address > h1 {
+    font-family: BigJohn, Verdana, sans-serif;
+    color: #48bf72;
+    font-size: 26px;
+    font-weight: 400;
+    text-align: center;
+    font-style: normal;
+    margin: 44px 0 29px 0;
+}
+
+/*form*/
+address > form {
+    width: 750px;
+    margin: 0 auto;
+}
+
+/*input style*/
+.addr {
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 45px;
+    color: #3c4955;
+    background-color: #f1f1f1;
+    border-radius: 0 0 3px 3px;
+    border: 2px solid #3c4955;
+    padding: 0 0 4px 23px;
+    outline: none;
+    margin: 6px 1px 24px 15px;
+    width: 287px;
+    height: 50px;
+}
+
+textarea {
+    width: 651px !important;
+    height: 228px !important;
+    margin: 6px 1px 24px 18px !important;
+}
+
+.ta {
+    height: 228px !important;
+}
+
+/*custom icons*/
+.icon {
+    display: inline-block;
+    position: relative;
+    top: 21px;
+    left: 27px;
+    width: 56px;
+    height: 50px;
+    padding: 0 0 0 50px;
+}
+
+div.user {
+    background-image: url(img/user.png);
+}
+
+div.mail {
+    background-image: url(img/mail.png);
+}
+
+div.ta {
+    background-image: url(img/crayon.png);
+    position: relative;
+    top: -24px;
+    left: 26px;
+    width: 56px;
+    height: 288px;
+}
+
+/*placeholder in input*/
+::placeholder {
+    color: #a6a5a5;
+}
+
+input:focus::placeholder, textarea:focus::placeholder {
+    color: transparent;
+}
+
+/*green fullength button*/
+button.fullgreen {
+    background-color: #48bf72;
+    border: 2px solid #48bf72;
+    color: white;
+    width: 93.5%;
+    height: 50px;
+    margin: 2.5px 25px 0 25px;
+    letter-spacing: 3px;
+}
+
+button.fullgreen:hover {
+    background-color: rgba(114, 229, 155, 0.2);
+    color: #3c4955;
+    font-weight: 700;
+}
+
+/*5th block - FOOTER*/
+
+footer {
+    height: 200px;
+    background-color: #3c4955;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 107.5px;
+}
+
+/*copyright block*/
+.copy {
+    color: white;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+}
+
+/*social block*/
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 313px;
+}
+
+/*each social element*/
+.social>div {
+    width: 49px;
+    height: 55px;
+    cursor: pointer;
+}
+
+.social>div:first-child {background-image: url(img/twitter.png);}
+.social>div:nth-child(2) {background-image: url(img/linkedin.png);}
+.social>div:nth-child(3) {background-image: url(img/dribbble.png);}
+.social>div:last-child {background-image: url(img/behance.png);}
