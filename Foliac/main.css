@@ -470,7 +470,7 @@ footer {
     cursor: pointer;
 }
 
-.social>div:first-child {background-image: url(img/social/twitter.png);}
-.social>div:nth-child(2) {background-image: url(img/social/linkedin.png);}
-.social>div:nth-child(3) {background-image: url(img/social/dribbble.png);}
-.social>div:last-child {background-image: url(img/social/behance.png);}
+.social>div:first-child {background-image: url(img/social/tw.png);}
+.social>div:nth-child(2) {background-image: url(img/social/in.png);}
+.social>div:nth-child(3) {background-image: url(img/social/db.png);}
+.social>div:last-child {background-image: url(img/social/be.png);}
