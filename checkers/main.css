@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: all .1s ease-in;
+}
+
+
+table {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 70vh;
+    height: 70vh;
+    background-color: lightgrey;
+    margin: auto;
+    border: 1px solid #6b7883;
+    border-collapse: collapse;
+}
+
+[class*="row"] {
+    width: 100%;
+    height: 12.5%;
+}
+
+[class*="cell"] {
+    width: 12.5%;
+    height: 12.5%;
+    border: 1px solid #6b7883;
+    position: relative;
+}
+
+tr:nth-child(2n+1)>td:nth-child(2n){
+    background-color: black;
+}
+
+tr:nth-child(2n)>td:nth-child(2n+1){
+    background-color: black;
+}
+
+.check {
+    height: calc(70vh*0.11);
+    width: calc(70vh*0.11);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.white {background-color: #fff;}
+.red {background-color: red;}
