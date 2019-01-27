@@ -1,0 +1,374 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600i,900|Roboto:300,400,700,900&subset=cyrillic');
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: all .1s ease-in;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: #303030;
+}
+
+/*main block*/
+.main {
+    width: 90%;
+    min-width: 1100px;
+    min-height: 100%;
+    background-color: #f2f2f2;
+    margin: 0 auto;
+    border-radius: 5px;
+    position: relative;
+}
+
+h2 {
+    font-family: Raleway, sans-serif;
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 900;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+/*navbar*/
+/*navbar width    */
+.navbar {
+    width: 90%;
+    margin: auto;
+    height: 140px;
+}
+
+/*site name*/
+h2.name {
+    display: inline-block;
+    margin: 48px 25px 25px 25px;
+    float: left;
+    cursor: default;
+}
+
+/*menu styles*/
+.navbar ul {
+    float: right;
+    margin: 0;
+    display: flex;
+    flex: 1;
+    text-align: center;
+    align-items: center;
+}
+
+/*menu items*/
+.navbar ul > li {
+    cursor: pointer;
+    font-size: 18px;
+    padding: 64px 25px 25px 25px;
+    line-height: 30px;
+    list-style-type: none;
+    border-bottom: 5px solid transparent;
+}
+
+/*underline for menu items*/
+.navbar ul > li:hover {
+    border-bottom: 5px solid black;
+}
+
+/*disable dots underline*/
+.navbar ul > li:last-child:hover {
+    border-bottom: 5px solid transparent;
+}
+
+/*product section*/
+/*product style*/
+.product {
+    width: 1080px;
+    height: 735px;
+    margin: 0 auto;
+}
+
+/*block with text*/
+.product .text {
+    height: 455px;
+    width: 620px;
+    float: left;
+    margin-top: 100px;
+    text-align: right;
+}
+
+/*h1*/
+.product .text > h1 {
+    font-family: Raleway, sans-serif;
+    font-size: 150px;
+    font-weight: 900;
+    line-height: 150px;
+    text-transform: uppercase;
+}
+
+/*p*/
+.product .text > p {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 36px;
+    margin: 35px 0 25px 0;
+}
+
+/*link for additional information*/
+.product > .text > span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e10011;
+    display: block;
+    cursor: pointer;
+}
+
+/*image*/
+.product .img {
+    background-image: url(img/blackphones.png);
+    height: 490px;
+    width: 365px;
+    float: right;
+    margin-top: 100px;
+}
+
+/*dots for carusel*/
+.dots {
+    float: right;
+    margin-top: 80px;
+}
+
+/*each dot*/
+.dots > li {
+    display: inline-block;
+    list-style-type: none;
+    font-size: 12px;
+    padding: 2px;
+}
+
+/*red dot*/
+.dots > li:first-child {
+    color: #e10011;
+}
+
+/*featured projects block*/
+/*feature style*/
+.feature {
+    width: 1198px;
+    height: 1193px;
+    background-color: #fff;
+    padding: 55px;
+    margin: 100px auto 0 auto;
+    border-radius: 5px;
+}
+/*top text aligment*/
+.feature .text {
+    text-align: center;
+    width: 550px;
+    margin: auto;
+}
+/*h2 margins*/
+.feature h2 {
+    margin: 42px 0 5px 0;
+}
+/*underline margins*/
+.feature .underline {
+    margin: 10px;
+}
+/*p text style*/
+.feature > .text > p {
+    margin-bottom: 55px;
+}
+/*block with images*/
+.pics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+/*each image style*/
+.pics .container {
+    position: relative;
+    height: auto;
+}
+/*image*/
+.pics img {
+    padding: 16px;
+    width: 100%;
+    height: auto;
+}
+/*show red overlay on hover*/
+.container .overlay:hover {
+    opacity: 1;
+}
+/*overlay style*/
+.container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: inherit;
+    width: inherit;
+    background-color: #e20009;
+    opacity: 0;
+    margin: 16px;
+    border-radius: 5px;
+}
+/*text on overlay*/
+.overlay .text {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 900;
+    text-align: left;
+    position: absolute;
+    bottom: 45px;
+    left: 40px;
+    width: inherit;
+}
+/*line on overlay*/
+.overlay hr {
+    border: 3px solid white;
+    width: 33%;
+    margin-top: 10px;
+}
+
+/*footer block*/
+/*footer*/
+.footer {
+    height: 580px;
+    width: 750px;
+    margin: auto;
+    position: relative;
+}
+
+.footer h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin: 100px 0 25px 0;
+}
+
+.footer p {
+    width: 550px;
+    margin: 0 auto 35px auto;
+    text-align: center;
+}
+
+form {
+    width: 800px;
+    margin: auto;
+}
+
+input {
+    width: 500px;
+    height: 70px;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    border: 0;
+    background-color: white;
+    padding: 0 0 0 70px;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    color: #979797;
+}
+
+button {
+    width: 200px;
+    height: 70px;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    border: 0;
+    background-color: #e10011;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 15px;
+    position: relative;
+    top: 2px;
+}
+
+button:active {
+    outline: none;
+    background-color: #9C1919;
+}
+
+button:focus {
+    outline: none;
+}
+
+input::placeholder {
+    font-style: italic;
+    color: #979797;
+    position: relative;
+    top: 0.1em;
+}
+
+input:focus {
+    outline: none;
+}
+
+input:focus::placeholder {
+    outline: none;
+    color: transparent;
+}
+
+.fa-envelope {
+    color:#979797;
+    font-size: 1.13em;
+    position: relative;
+    left: 3em;
+    top: 0.1em;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 340px;
+    height: 100px;
+    position: absolute;
+    top: 400px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.social div {
+    background-color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color:  #979797;
+    font-weight: 400;
+}
+
+.social div:hover {
+    cursor: pointer;
+    font-size: 2.5em;
+}
+
+.copy span {
+    font-family: Raleway, sans-serif;
+    color:  #979797;
+    font-size: 18px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 24px;/* Приближение из-за подстановки шрифтов */
+    height: 30px;
+    width: 500px;
+    margin: auto;
+    display: block;
+}
