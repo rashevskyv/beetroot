@@ -16,11 +16,8 @@ html, body {height: 100%;}
 
 h1 {
     font-size: 32px;
-    font-family: Verdana, sans-serif;
+    font-family: sans-serif;
     margin-left: 10px;
-    position: relative;
-    top: 15px;
-    left: 135px;
     z-index: 10;
 }
 
@@ -42,10 +39,10 @@ h1 {
     justify-content: space-between;
 }
 
-.content .ba-row:nth-child(1){height: calc(150px + 20px);}
-.content .ba-row:nth-child(2){height: calc(320px + 20px);}
-.content .ba-row:nth-child(3){height: calc(185px + 20px);}
-.content .ba-row:nth-child(4){height: calc(145px + 20px);}
+.content .ba-row:nth-child(2){height: calc(150px + 20px);}
+.content .ba-row:nth-child(3){height: calc(320px + 20px);}
+.content .ba-row:nth-child(4){height: calc(185px + 20px);}
+.content .ba-row:nth-child(5){height: calc(145px + 20px);}
 
 .ba-row .ba-col .ba-row:nth-child(1){height: calc(155px + 20px);}
 .ba-row .ba-col .ba-row:nth-child(2){height: calc(145px + 20px);}
