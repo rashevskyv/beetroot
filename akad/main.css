@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:400,800');
+
 * {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -5,4 +7,261 @@
     padding: 0;
     margin: 0;
     transition: all .1s ease-in;
+}
+
+.main {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.row {
+    display: grid;
+    align-content: start;
+}
+
+/*блок заголовка*/
+.header {
+    background-image: url('img/bgi.png');
+    height: 500px;
+}
+
+/*первая линия с меню и названием сайта*/
+.header .row:nth-child(1) {
+    grid-template-columns: 80px 1fr 1fr 80px;
+    grid-template-rows: 100px;
+    align-items: center
+}
+
+/*вторая линия с хелебными крошками и названием текущей страницы*/
+.header .row:nth-child(2) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 400px;
+    align-items: center;
+    justify-items: center;
+}
+
+/*выравнивание названия сайта по левому краю*/
+.header .row div:nth-child(3) {
+    justify-self: end;
+}
+
+/*общие стили текста блока заголовка*/
+.header .row {
+    font-family: Montserrat, sans-serif;
+    color: #60606e;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 48px;
+}
+
+/*выравнивание текста с названием текущей страницы и крошками по центру*/
+.header .title {
+    text-align: center;
+}
+
+/*размер шрифта блока с названием текущей страницы*/
+.title h1 {
+    font-size: 36px;
+}
+
+/*размер шрифта крошек*/
+.title h3 {
+    font-size: 14px;
+}
+
+/*блок article с текстом*/
+.article h1, h2, h3 {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    color: #60606e;
+    font-size: 30px;
+    text-transform: uppercase;
+    line-height: 30px;
+    margin: 0 0 30px 0;
+}
+/*текст в блоке article*/
+.article h2 {
+    font-size: 18px;
+    line-height: 18px;
+    margin: 30px 0 30px 0;
+}
+
+.article h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    margin: 30px 0 30px 0;
+}
+
+.article p {
+    font-family: Open, sans-serif;
+    font-size: 14px;
+    line-height: 27px;
+    font-weight: 400;
+    color: #60606e;
+    margin-bottom: 15px;
+}
+/*полоска под текстом */
+.article hr {
+    width: 68px;
+    height: 21px;
+    background-color: #7beec7;
+    border: none;
+    position: relative;
+    top: 33px;
+    z-index: -1;
+}
+/*иконки*/
+.article div.fas, .article div.fab {
+    width: 40px;
+    height: 40px;
+    background-color: #7beec7;
+    color: white;
+    font-size: 1.4em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px 0 0;
+}
+/*смещение полоски под текстом для центрированных заголовков*/
+.article > div.row:nth-child(3) hr.center {
+    margin: auto;
+    left: -93px;
+}
+
+.article > div.row:nth-child(5) hr.center {
+    margin: auto;
+    left: -111px;
+}
+/*стили grid row в блоке article */
+.article > div.row:nth-child(1) {
+    height: 117px;
+}
+
+.article > div.row:nth-child(2) {
+    grid-template-columns: 80px 1fr 1fr 80px;
+    grid-auto-rows: minmax(466px, auto);
+    column-gap: 30px;
+}
+
+.article > div.row:nth-child(3), .article > div.row:nth-child(5) {
+    grid-template-columns: 3fr 8fr 3fr;
+    text-align: center;
+    align-self: center;
+    column-gap: 30px;
+    grid-auto-rows: minmax(190px, auto);
+}
+
+.article > div.row:nth-child(4) {
+    grid-template-columns: 1fr 4fr 4fr 4fr 1fr;
+    column-gap: 30px;
+    grid-auto-rows: minmax(210px, auto);
+    height: 440px;
+}
+
+.article > div.row:nth-child(6) {
+    grid-template-columns: 1fr 3fr 3fr 3fr 3fr 1fr;
+    grid-gap: 30px;
+    grid-auto-rows: minmax(334px, auto);
+    height: fit-content;
+    margin-bottom: 30px;
+}
+/*блок footer */
+.footer {
+    height: 330px;
+    background-color: #7beec7;
+}
+/*row в блоке footer */
+.footer > .row {
+    grid-template-columns: 80px 6fr 6fr 80px;
+    grid-gap: 30px;
+}
+/*заголовки в блоке footer */
+.footer h2 {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    color: #60606e;
+    font-size: 24px;
+    text-transform: uppercase;
+    line-height: 36px;
+    margin: 25px 0 0 20px;
+}
+
+.footer h1 {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    line-height: 48px;
+    margin: 50px 0 30px 0;
+}
+/*кнопка */
+.footer button {
+    height: 50px;
+    width: 165px;
+    background-color: white;
+    border: none;
+    font-family: Montserrat, sans-serif;
+    color: #7beec7;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+/*блок с белым фоном*/
+.footer .box {
+    height: 230px;
+    width: 555px;
+    background-color: #fff;
+    margin: 50px 0;
+}
+/*абзац*/
+.footer p {
+    font-family: "Open Sans", sans-serif;
+    color: #999999;
+    font-size: 16px; /* Approximation due to font substitution */
+    font-weight: 400;
+    line-height: 24px; /* Approximation due to font substitution */
+    text-align: left;
+    margin: 5px 60px 0 20px;
+}
+/*форма и поля*/
+.footer form {
+    position: relative;
+    bottom: -12px;
+}
+
+.footer input {
+    height: 50px;
+    width: 375px;
+    position: relative;
+    margin: 0 0 0 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding-left: 20px;
+}
+
+.footer form button {
+    width: 135px;
+    background-color: #7beec7;
+    color: #fff;
+    position: relative;
+    right: 5px;
+    bottom: -1px;
+}
+
+input::placeholder {
+    font-family: Montserrat, sans-serif;
+    color:  #cdcdcd;
+    font-size: 12px;/* Approximation due to font substitution */
+    font-weight: 700;
+    line-height: 48px;/* Approximation due to font substitution */
+    text-align: left;
+    text-transform: uppercase;
+    padding-left: 20px;
+}
+/*прячем плейсхолдер*/
+input:focus::placeholder {
+    color: transparent;
 }
