@@ -263,7 +263,7 @@ body, html {
 }
 
 input:checked+.size__size {border: 1px #000000 solid;}
-input:hover+.size__size {border: 1px #000000 solid;}
+input:hover+.size__size {border: 1px #000000 solid; cursor: pointer;}
 
 .button {
     font-family: "Roboto Condensed", Roboto, sans-serif;
@@ -284,6 +284,7 @@ input:hover+.size__size {border: 1px #000000 solid;}
     border: none;
     color: #fff;
     font-weight: 400;
+    cursor: pointer;
 }
 
 .button:focus {
