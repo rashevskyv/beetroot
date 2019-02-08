@@ -162,6 +162,7 @@ body, html {
     width: 42px;
     margin: 0 9px;
     cursor: pointer;
+    transform: scale(1.2);
 }
 
 .prod-card-block {
@@ -262,6 +263,7 @@ body, html {
 }
 
 input:checked+.size__size {border: 1px #000000 solid;}
+input:hover+.size__size {border: 1px #000000 solid;}
 
 .button {
     font-family: "Roboto Condensed", Roboto, sans-serif;
@@ -271,17 +273,23 @@ input:checked+.size__size {border: 1px #000000 solid;}
     font-size: 12px;
     text-transform: uppercase;
     margin: 4px 0 0 8px;
-}
-
-.button--add-to-cart {
-    background-color: #a200b8;
-    border: none;
-    color: #fff;
-}
-
-.button--wishlist {
     background-color: transparent;
     border: 1px #000000 solid;
     color: black;
     font-weight: 600;
+}
+
+.button:hover {
+    background-color: #a200b8;
+    border: none;
+    color: #fff;
+    font-weight: 400;
+}
+
+.button:focus {
+    background-color: #a200b8;
+    border: none;
+    color: #fff;
+    font-weight: 400;
+    outline: none;
 }
