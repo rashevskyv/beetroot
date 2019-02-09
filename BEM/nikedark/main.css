@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:100');
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: all .1s ease-in;
+}
+
+body, html {
+    height: 100%;
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 100;
+}
+
+.main {
+    width: 800px;
+    height: 600px;
+    background: url("img/bg.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.content {
+    height: 390px;
+    width: 685px;
+    background-color: #111a28;
+    border-radius: 15px;
+    box-shadow: 0 0 65px 0 rgba(0, 0, 0, 0.82);
+}
+
+.content__logo {
+    background-image: url(img/logo.png);
+    width: 65px;
+    height: 33px;
+    margin: 20px;
+    position: absolute;
+}
+
+.prod-present {
+    float: left;
+    width: 446px;
+    height: 100%;
+}
+
+.prod-present {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prod-present__img {
+    width: 330px;
+    height: 160px;
+    margin: auto;
+    z-index: 2;
+}
+
+.color-select {
+    position: absolute;
+    bottom: 0;
+    height: 55px;
+    width: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type="radio"]{display: none}
+
+.color-select_label{
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: 2px #111a28 solid;
+}
+
+.color-select_color:nth-child(2){background-color: #19223d;}
+.color-select_color:nth-child(4){background-color: #fff;}
+.color-select_color:nth-child(6){background-color: #ed3030;}
+.color-select_color:nth-child(8){background-color: #24e4eb;}
+
+.color-select_label:hover{
+    border: 2px rgba(255, 255, 255, 0.24) solid;
+}
+
+.color-select_rad:checked+.color-select_label{
+    border: 2px rgba(255, 255, 255, 0.24) solid;
+}
+
+
+
+
+.prod-card-block {
+    float: right;
+    width: calc(100% - 501px);
+    height: 100%;
+    margin-right: 55px;
+    position: relative;
+}
+
+.prod-card-content {
+    height: fit-content;
+    width: 185px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.prod-card__slogan {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 100;
+}
+
+.prod-card__name {
+    color: rgba(255,255,255,0.54);
+    font-size: 16px;
+    line-height: 16px;
+    margin: 20px 0;
+}
+
+.prod-card__rating {
+    display: flex;
+    width: 65px;
+    justify-content: space-between;
+    font-size: 10px;
+    margin: 25px 0;
+    color: #f7c00e;
+}
+
+.fa-star:hover {
+    opacity: 0.7;
+}
+
+.selectors {
+    margin: 30px 0;
+}
+
+.custom-select {
+    position: relative;
+    width:70px;
+    height: 32px;
+    border: 1px rgba(255, 255, 255, 0.26) solid;
+    display: inline-block;
+    font-size: 15px;
+}
+
+.custom-select select {
+    display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+    background-color: rgba(17, 26, 40, 0.26);
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+    position: absolute;
+    content: ">";
+    top: 12px;
+    right: 4px;
+    width: 0;
+    height: 0;
+    transform: rotate(90deg);
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 12px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+    color: #ffffff;
+    padding: 5px 16px;
+    border: 1px rgba(255, 255, 255, 0.26) solid;
+    border-color: transparent transparent rgba(255, 255, 255, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+    position: absolute;
+    background-color: rgb(17, 26, 40);
+    border: 1px rgba(255, 255, 255, 0.26) solid;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.button {
+    display: block;
+    width: 184px;
+    height: 40px;
+    font-size: 15px;
+    background-color: rgba(76, 82, 90, 0.24);
+    border: 1px rgba(255,255,255,0.54) solid;
+    color: rgba(255,255,255,0.54);
+    margin: 25px 0;
+}
+
+.button:hover {
+    background-color: rgba(76, 82, 90, 0.9);
+    border: 1px rgba(255,255,255,1) solid;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.button:focus {
+    background-color: #528977;
+    border: none;
+    color: #fff;
+    font-weight: 400;
+    outline: none;
+}
+
