@@ -98,14 +98,12 @@ input[type="radio"]{display: none}
 
 .color-select_label:hover{
     border: 2px rgba(255, 255, 255, 0.24) solid;
+    cursor: pointer;
 }
 
 .color-select_rad:checked+.color-select_label{
     border: 2px rgba(255, 255, 255, 0.24) solid;
 }
-
-
-
 
 .prod-card-block {
     float: right;
@@ -150,6 +148,7 @@ input[type="radio"]{display: none}
 
 .fa-star:hover {
     opacity: 0.7;
+    cursor: pointer;
 }
 
 .selectors {
