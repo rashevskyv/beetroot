@@ -116,10 +116,13 @@ label, legend {
   font-weight: 600; }
 
 select[name="month"] {
-  width: 180px; }
+  width: 180px;
+}
 
 select[name="year"] {
-  width: 100px; }
+  width: 100px;
+}
+
 
 .form-row {
   margin: 0; }
