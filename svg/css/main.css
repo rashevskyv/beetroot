@@ -349,6 +349,8 @@ footer {
   height: calc(25vh - 5px);
   border: 5px #fff solid;
   padding: 0;
+  background-size: auto;
+  background-repeat: no-repeat;
 }
 div:hover > .overlay {
   display: block;
