@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/libs.css">
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+</head>
+<body>
+
+<div class="container d-flex justify-content-center align-items-center">
+    <div class="input-block-wrapper">
+        <div class="input-block d-flex flex-column justify-content-around">
+            <div class="input-block__header">
+                <div class="header">
+                    <p class="header__name">Harold Finch</p>
+                    <h3 class="header__label">Your Total</h3>
+                </div>
+                <p class="total-cost">$88</p>
+            </div>
+            <div class="input-block__body">
+                <form action="">
+                    <label for="credit">Credit card number</label><input type="text" class="form-control" id="credit">
+                    <fieldset class="card-date form-row d-flex justify-content-between">
+                        <legend>Expiration date</legend>
+                        <select name="month" class="form-control">
+                            <option>Month</option>
+                            <option value="">Jan</option>
+                            <option value="">Feb</option>
+                            <option value="">March</option>
+                            <option value="">April</option>
+                            <option value="">May</option>
+                        </select>
+                        <select name="year" class="form-control">
+                            <option value="">Year</option>
+                            <option value="">1980</option>
+                            <option value="">1981</option>
+                            <option value="">1982</option>
+                            <option value="">1983</option>
+                            <option value="">1984</option>
+                            <option value="">1985</option>
+                            <option value="">1986</option>
+                            <option value="">1987</option>
+                            <option value="">1988</option>
+                            <option value="">1989</option>
+                        </select>
+                    </fieldset>
+                    <label for="cvv" class="d-block">CVV</label>
+                    <input type="text" id="cvv" class="form-control cvv d-inline-block">
+                    <small class="d-inline-block">3 or 4 digits - <a href="#" class="grey-link">view example</a></small>
+                </form>
+            </div>
+            <div class="input-block__bottom">
+                <div class="border-top d-flex flex-column justify-content-evenly h-100">
+                    <button class="btn btn-green">Pay</button>
+                    <a class="grey-link align-self-center" href="#">Cancel order</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/libs.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>
