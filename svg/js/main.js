@@ -4,7 +4,8 @@ new fullpage('#fullpage', {
     //options here
     autoScrolling:true,
     // scrollHorizontally: true,
-    scrollOverflow: true
+    scrollOverflow: true,
+    loopBottom: true
 });
 
 //methods
