@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="154" viewBox="0 0 96 154">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #000;
+      }
+
+      .cls-1 {
+        stroke-width: 9.14px;
+      }
+
+      .cls-2 {
+        stroke-width: 10.32px;
+      }
+    </style>
+  </defs>
+  <rect id="Rounded_Rectangle_1" data-name="Rounded Rectangle 1" class="cls-1" x="6" y="7" width="84" height="141" rx="42" ry="42"/>
+  <circle class="cls-2" cx="48" cy="47" r="5"/>
+</svg>

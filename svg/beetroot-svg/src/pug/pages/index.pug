@@ -1,0 +1,76 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Design LAB'
+
+block content
+    header.ba-header.section
+        div.ba-container
+            +icon('logo')
+            h1.ba-header__title WORKING <br> WITH design LAB
+            p.ba-header__text.ba__text We’ve been helping startups launch and grow their businesses. We help you to fill the gap between development <br> design and product management.
+            a(href="#about")
+                +icon('scroll')
+
+    section.section.desktop
+        div.ba-half-height.ba-wrapper
+            div.ba-container
+                div.ba-box
+                    h2.ba-box__title About us
+                    p.ba-box__text When you work with us, you are part of a team of committed collaborators. All aspects of our software development process are integrated, iterative and agile.
+                    p.ba-box__text Our approach unifies design, development and product management to create exceptional products. We start each project by understanding your business goals, the user’s needs and the product requirements. Then we help translate them into effective and elegant solutions.
+        div.ba-half-height.ba-wrapper.ba-services
+            div.ba-container
+                div.ba-box.ba-light
+                    h2.ba-box__title.ba-light services
+                    p.ba-box__text Before we sign a contract or write a line of code our team will spend the necessary time needed to understand your product vision.
+                    p.ba-box__text The outcome of this scoping session is a proposal or high-level statement of work. Based on your requirements, we can provide a complete offering or just the pieces you need. Our approach unifies design, development and product management to create exceptional products. We start each project by understanding your business goals, the user’s needs and the product requirements. Then we help translate them into effective and elegant solutions.
+
+    section.section.ba-conteiner
+        div.ba-container.ba-what-we-do
+            div.ba-box
+                h2.ba-box__title What we do
+                div.ba-what-we-do__article
+                    div.ba-what-we-do__title
+                        +icon('design')
+                        h3.ba-what-we-do__title-text Design
+                    p.ba-box__text Our design practice offers a full range of services including branding strategy, interaction and visual design and user experience testing. Throughout your project, our designers create and implement visual designs and workflows, solicit user feedback, and work with you to make sure what gets built is what is needed.
+                div.ba-what-we-do__article
+                    div.ba-what-we-do__title
+                        +icon('dev')
+                        h3.ba-what-we-do__title-text Development
+                    p.ba-box__text Our design practice offers a full range of services including branding strategy, interaction and visual design and user experience testing. Throughout your project, our designers create and implement visual designs and workflows, solicit user feedback, and work with you to make sure what gets built is what is needed.
+                div.ba-what-we-do__article
+                    div.ba-what-we-do__title
+                        +icon('product')
+                        h3.ba-what-we-do__title-text Product Management
+                    p.ba-box__text Our design practice offers a full range of services including branding strategy, interaction and visual design and user experience testing. Throughout your project, our designers create and implement visual designs and workflows, solicit user feedback, and work with you to make sure what gets built is what is needed.
+        div.empty
+
+    section.section.desktop
+        div.ba-half-height.ba-wrapper
+            div.ba-container.ba-columns
+                div.row
+                    div.topworkz.col-md
+                        span.ba-columns__name topworkz
+                    div.joint.col-md-5
+                        span.ba-columns__name joint
+                    div.market.col-md
+                       span.ba-columns__name market
+                div.row
+                    div.worktop.col-md
+                        span.ba-columns__name worktop
+                    div.lable.col-md-5
+                        span.ba-columns__name lable
+                    div.kyiv.col-md
+                        span.ba-columns__name kyiv
+        div.ba-half-height.ba-wrapper.d-flex.flex-column.justify-content-around
+            div.ba-container
+                div.ba-box
+                    h2.ba-box__title Contacts
+                    p.ba-box__text Planning and development is iterative. Because we are constantly coding and testing, the products we build are always ready to go live. This iterative process allows for changes as business requirements evolve.
+                    button Contact us
+            div.footer
+                +icon('logo')
+                span &copy; 2014. All Rights Reserved Ellipsis.com
+
